@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff4df">
+  <meta name="description" content="A chaotic, colorful Brainrot Dobble meme-matching game.">
+  <title>Brainrot Dobble 💀</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div class="pills"><span class="pill green">MEME EDITION</span><span class="pill purple">BRAINROT LEVEL: 100</span></div>
+      <h1>BRAINROT <span>DOBBLE</span></h1>
+      <p>Two circles. One matching meme. Zero brain cells. 🧠</p>
+    </header>
+
+    <section class="stats" aria-label="Game statistics">
+      <div class="stat"><span>SCORE</span><strong id="score">0</strong></div>
+      <div class="stat"><span>STREAK 🔥</span><strong id="streak">0</strong></div>
+      <div class="stat"><span>TIME ⏱️</span><strong id="time">45</strong></div>
+      <div class="stat"><span>ROUND</span><strong id="round">1</strong></div>
+    </section>
+    <div class="progress" aria-label="Time remaining"><div id="time-bar"></div></div>
+
+    <p class="eyebrow">FIND THE MATCHING BRAINROT</p>
+    <section class="cards" aria-label="Two cards to compare">
+      <div class="card-wrap"><span class="card-label pink">YOUR LEFT CARD</span><div class="game-card" id="card-a" aria-label="First Dobble card"></div></div>
+      <div class="versus">VS</div>
+      <div class="card-wrap"><span class="card-label blue">YOUR RIGHT CARD</span><div class="game-card" id="card-b" aria-label="Second Dobble card"></div></div>
+    </section>
+
+    <section class="controls">
+      <p id="feedback" class="feedback" aria-live="polite">👀 Find the same meme on both cards!</p>
+      <div class="buttons">
+        <button id="start-btn" class="primary">START GAME 🚀</button>
+        <button id="hint-btn" class="secondary">NEED A HINT? 💡</button>
+        <button id="restart-btn" class="secondary">RESTART ↻</button>
+      </div>
+      <p id="hint-text" class="hint-text" aria-live="polite"></p>
+    </section>
+
+    <section class="how-to">
+      <article><h2>🎯 HOW TO PLAY</h2><p>Tap the meme that appears on both circular cards. Only one symbol matches!</p></article>
+      <article><h2>⚡ STACK YOUR STREAK</h2><p>Correct matches earn 10 points. Keep matching to build a streak.</p></article>
+      <article><h2>💀 BRAINROT ROSTER</h2><p>Tralalero, Tung Tung, Bombardiro, Cappuccina, Patapim and more meme chaos.</p></article>
+    </section>
+    <footer>UNOFFICIAL FAN-MADE MEME GAME · ALL CHAOS, NO CHILL</footer>
+  </main>
+</body>
+</html>
